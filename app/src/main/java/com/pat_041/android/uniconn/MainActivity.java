@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.pat_041.android.uniconn.definitions.User;
-
+//for hacktober fest 
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
                 switch (position) {
                     case 0:
                     case 2:
-                    Intent i = new Intent(getApplicationContext(), SearchingActivity.class);
+                    Intent inten = new Intent(getApplicationContext(), SearchingActivity.class);
                     // Pass image index
-                    i.putExtra("id", position);
-                    startActivity(i);
+                    inten.putExtra("id", position);
+                    startActivity(inten);
                         break;
                     case 1:Intent in = new Intent(getApplicationContext(), UserProfileActivity.class);
                         // Pass image index
